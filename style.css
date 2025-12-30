@@ -1,0 +1,105 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Georgia', serif;
+  background:#fff0f5;
+  color:#333;
+}
+
+/* SECURITY CODE PAGE */
+#code-page{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+  background:#fde2e2;
+}
+
+#code-page input{
+  padding:10px;
+  margin:10px;
+  border-radius:5px;
+  border:1px solid #aaa;
+}
+
+#code-page button{
+  padding:10px 20px;
+  border:none;
+  background:#f3c77c;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+/* HIDDEN CLASS */
+.hidden{
+  display:none;
+}
+
+/* WELCOME PAGE */
+#welcome-page{
+  text-align:center;
+  padding:50px;
+  background: linear-gradient(to bottom, #ffe6f0, #fff0f5);
+  position: relative;
+}
+
+#welcome-page h1{
+  color:#f36f8f;
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+#welcome-page p{
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+/* GALLERY PAGE */
+#gallery-page{
+  padding:20px;
+}
+
+.profile-container{
+  text-align:right;
+  margin-bottom:20px;
+}
+
+.profile-pic{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  border:2px solid #f3c77c;
+}
+
+/* Gallery photos */
+.gallery{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.photo-card{
+  position:relative;
+}
+
+.photo-card img{
+  width:100%;
+  max-width:600px;
+  display:block;
+  border-radius:10px;
+}
+
+.download-btn{
+  display:inline-block;
+  margin-top:5px;
+  padding:5px 10px;
+  background:#f3c77c;
+  color:#111;
+  border-radius:5px;
+  text-decoration:none;
+}
