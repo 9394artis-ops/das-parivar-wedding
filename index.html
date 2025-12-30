@@ -1,45 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Das Parivar Wedding</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body{
-      font-family: Arial;
-      margin:0;
-      background:#fff;
-      text-align:center;
-    }
-    h1{
-      background:#ff4d6d;
-      color:white;
-      padding:15px;
-    }
-    .msg{
-      padding:15px;
-      font-size:18px;
-    }
-    img{
-      width:90%;
-      max-width:400px;
-      margin:10px auto;
-      border-radius:10px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Das Parivar Wedding Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-<h1>Welcome – Das Parivar</h1>
+  <!-- SECURITY CODE PAGE -->
+  <div id="code-page">
+    <h1>Enter Wedding Access Code</h1>
+    <input type="text" id="accessCode" placeholder="Enter code here">
+    <button onclick="checkCode()">Submit</button>
+    <p id="code-error"></p>
+  </div>
 
-<div class="msg">
-  Das Parivar ki official wedding gallery ❤️  
-  <br>
-  Shaadi abhi baaki hai, website pehle live ✨
-</div>
+  <!-- WELCOME PAGE -->
+  <div id="welcome-page" class="hidden">
+    <h1>Welcome to Das Parivar ❤️</h1>
+    <p>Thank you for visiting our wedding gallery!</p>
+    <canvas id="balloonsCanvas"></canvas>
+    <div id="fireworksContainer"></div>
+    <button onclick="openGallery()">Enter Gallery</button>
+  </div>
 
-<img src="https://i.imgur.com/7QK9QZB.gif">
+  <!-- GALLERY PAGE -->
+  <div id="gallery-page" class="hidden">
+    <div class="profile-container">
+      <img src="assets/IMG_20251229_222122.jpg" alt="Rahul Das" class="profile-pic">
+      <h2>Rahul Das</h2>
+    </div>
 
-<p>📸 Photos will be uploaded here soon</p>
+    <div class="gallery">
+      <!-- Example photos, add more -->
+      <div class="photo-card">
+        <img src="assets/photo1.jpg" alt="Photo 1">
+        <a href="assets/photo1.jpg" download class="download-btn">Download</a>
+      </div>
+      <div class="photo-card">
+        <img src="assets/photo2.jpg" alt="Photo 2">
+        <a href="assets/photo2.jpg" download class="download-btn">Download</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXTRA TAB (blank for future) -->
+  <div id="extra-tab" class="hidden">
+    <h2>Coming Soon...</h2>
+  </div>
 
 </body>
-</html>
+      </html>
